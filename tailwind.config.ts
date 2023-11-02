@@ -5,8 +5,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        photoshop: "url('/img/Photoshop.jpg')",
+        'photoshop-ovr': "url('/img/Photoshop-ovr.jpg')",
+        illustrator: "url('/img/Illustrator.jpg')",
+        'illustrator-ovr': "url('/img/Illustrator-ovr.jpg')",
       },
       colors: {},
     },
