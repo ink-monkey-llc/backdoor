@@ -1,20 +1,16 @@
-'use client'
-import { useEffect, useState } from "react"
-import Image from 'next/image'
 import React from 'react'
+import Image from 'next/image'
 
 function Weather() {
-    const [weather, setWeather] = useState(null);
-    const icon =weather?.properties.periods[0].icon;
-    useEffect(() => {
-        fetch('https://api.weather.gov/gridpoints/SGF/67,31/forecast')
-        .then(response => response.json())
-        .then(data => setWeather(data));
-    }, [])
   return (
-    <div>
-        <Image src=""/>
-    </div>
+    <a target='_blank' href='https://www.booked.net/weather/springfield-1259'>
+      <Image
+        src='https://w.bookcdn.com/weather/picture/4_1259_0_1_137AE9_199_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=&domid=w209&anc_id=59246'
+        width={200}
+        height={300}
+        alt='booked.net'
+      />
+    </a>
   )
 }
 
