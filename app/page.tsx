@@ -3,6 +3,7 @@ import Weather from './weather/weather'
 import Main from './main/main'
 import Exe from './exe/exe'
 import Calc from './calc/calc'
+import Logo from './logo/logo'
 
 import Image from 'next/image'
 import logo from '/public/img/logo.png'
@@ -15,9 +16,7 @@ export default function Home() {
       <Main>
         <div className='flex h-[40vh]'>
           <Exe />
-          <div className='relative w-[400px] '>
-            <Image className='object-scale-down' src={logo} alt='Ink Monkey Logo' fill={true} />
-          </div>
+          <Logo />
         </div>
         <div className='px-10 flex gap-4 h-1/2'>
           <Weather />
