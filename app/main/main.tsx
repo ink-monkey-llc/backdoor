@@ -3,7 +3,7 @@ interface MainProps {
 }
 
 function Main({ children }: MainProps) {
-  return <div className=' w-full h-[750px] flex flex-col  p-12 '>{children}</div>
+  return <div className=' w-full min-h-[100vh] flex flex-col gap-20 p-12 pt-6'>{children}</div>
 }
 
 export default Main

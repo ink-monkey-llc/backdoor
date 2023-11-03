@@ -9,7 +9,7 @@ const Menu = ({ links }: MenuProps) => {
       {links &&
         links.map((link) => (
           <>
-            <a href={link.url} key={link.name} className='block text-white text-start py-1 px-4 hover:bg-[#333]'>
+            <a rel='noreferrer noopener' target='_blank' href={link.url} key={link.name} className='block text-white text-start py-1 px-4 hover:bg-[#333]'>
               {link.name}
             </a>
           </>

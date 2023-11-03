@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 function Exe() {
   return (
-    <div className='h-full w-1/3 min-w-[330px] flex items-center'>
+    <div className='h-full w-1/3 min-w-[330px] flex justify-center items-center'>
       <div className='grid grid-cols-3 gap-2 m-auto'>
         {exeData.map((exe) => {
           const item = exe as ExeItem
