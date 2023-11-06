@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import CalcBtn from './calc-btn'
-import { calcData } from '@/lib/calc-data'
 
 const Calc: React.FC = () => {
   const [screenValue, setScreenValue] = useState<string>('0')
