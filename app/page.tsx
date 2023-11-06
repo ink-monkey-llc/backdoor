@@ -11,14 +11,14 @@ import Search from './search/search'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col  items-center'>
+    <main className='flex min-h-screen flex-col items-center m-auto'>
       <Header />
       <Main>
-        <div className='flex h-[40vh]'>
+        <div className='flex h-[40vh] m-auto'>
           <Exe />
           <Logo />
         </div>
-        <div className='px-10 flex gap-4 h-1/2'>
+        <div className='px-10 flex gap-4 m-auto h-1/2'>
           <Weather />
           <Calc />
           <Search />
