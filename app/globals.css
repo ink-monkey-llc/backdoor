@@ -13,3 +13,25 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb))
 }
+
+
+.menu-animation {
+  animation: rotateAnimation 300ms ease-in-out forwards;
+  animation-delay: calc(var(--i) * 20ms);
+}
+
+@keyframes rotateAnimation {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+
+  50% {
+    transform: rotateX(-20deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}

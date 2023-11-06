@@ -32,9 +32,9 @@ const config: Config = {
           },
         },
       },
-      // animation: {
-      //   'rotate-x': 'rotateX 300ms ease-in-out forwards',
-      // },
+      animation: {
+        'rotate-x': 'rotateX 300ms ease-in-out forwards',
+      },
     },
   },
   plugins: [],
