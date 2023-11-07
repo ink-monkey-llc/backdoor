@@ -51,6 +51,7 @@ export const navData = [
       { name: 'Bonanza', url: 'https://www.bonanza.com/home/login?return_to=https%3A%2F%2Fwww.bonanza.com%2F' },
       { name: 'inkmonkeyllc.com', url: 'https://inkmonkeyllc.com/' },
       { name: 'ink-monkey.com', url: 'https://ink-monkey.com/' },
+      { name: 'Payroll Calc.', url: 'https://www.adp.com/resources/tools/calculators/states/missouri-salary-paycheck-calculator.aspx' },
       { name: 'Email (Godaddy)', url: 'https://sso.godaddy.com/?app=o365&realm=pass&marketid=en-US' },
       { name: 'Email (Gmail)', url: 'https://mail.google.com/mail/u/0/#inbox' },
     ],
