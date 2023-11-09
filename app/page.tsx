@@ -8,15 +8,17 @@ import Logo from './logo/logo'
 import Image from 'next/image'
 import logo from '/public/img/logo.png'
 import Search from './search/search'
+import Calendar from './calendar/calendar'
 
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center m-auto'>
       <Header />
       <Main>
-        <div className='flex h-[40vh] m-auto'>
+        <div className='flex h-[40vh] gap-4 m-auto'>
           <Exe />
           <Logo />
+          <Calendar />
         </div>
         <div className='px-10 flex gap-4 m-auto h-1/2'>
           <Weather />
