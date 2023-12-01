@@ -52,9 +52,10 @@ export const navData = [
       { name: 'inkmonkeyllc.com', url: 'https://inkmonkeyllc.com/' },
       { name: 'ink-monkey.com', url: 'https://ink-monkey.com/' },
       { name: 'Payroll Calc.', url: 'https://www.adp.com/resources/tools/calculators/states/missouri-salary-paycheck-calculator.aspx' },
-      {name: 'Decal Pricing', url: 'https://www.decals.com/bulk-order-stickers'},
+      
       { name: 'Email (Godaddy)', url: 'https://sso.godaddy.com/?app=o365&realm=pass&marketid=en-US' },
       { name: 'Email (Gmail)', url: 'https://mail.google.com/mail/u/0/#inbox' },
+      {name: 'Decal Pricing', url: 'https://www.decals.com/bulk-order-stickers'},
     ],
   },
   { label: 'Contact Info', path: '/contact-info' },
