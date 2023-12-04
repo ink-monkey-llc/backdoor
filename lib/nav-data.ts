@@ -55,7 +55,7 @@ export const navData = [
       
       { name: 'Email (Godaddy)', url: 'https://sso.godaddy.com/?app=o365&realm=pass&marketid=en-US' },
       { name: 'Email (Gmail)', url: 'https://mail.google.com/mail/u/0/#inbox' },
-      {name: 'Payroll', url: 'https://online.adp.com/signin/v1/?APPID=RUN&productId=80e309c3-70c3-bae1-e053-3505430b5495&Action=Login&Mode=BROWSER&Stc=False&ssru=branded'}
+      {name: 'Payroll', url: 'https://online.adp.com/signin/v1/?APPID=RUN&productId=80e309c3-70c3-bae1-e053-3505430b5495&Action=Login&Mode=BROWSER&Stc=False&ssru=branded'},
       {name: 'Decal Pricing', url: 'https://www.decals.com/bulk-order-stickers'},
     ],
   },
