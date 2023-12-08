@@ -1,7 +1,7 @@
 import Item from './item'
-import { exeData } from '@/lib/exe-data'
-import { cn } from '@/lib/utils'
-import type { ExeData, ExeItem } from '@/lib/exe-data'
+import { exeData } from '@/../lib/exe-data'
+import { cn } from '@/../lib/utils'
+import type { ExeData, ExeItem } from '@/../lib/exe-data'
 import Image from 'next/image'
 
 function Exe() {

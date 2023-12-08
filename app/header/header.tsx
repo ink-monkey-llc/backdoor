@@ -1,6 +1,6 @@
 import NavButton from './nav-button'
 import Menu from './menu'
-import { navData } from '@/lib/nav-data'
+import { navData } from '@/../lib/nav-data'
 
 function Header() {
   return (

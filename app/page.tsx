@@ -1,3 +1,4 @@
+import React from 'react'
 import Header from './header/header'
 import Weather from './weather/weather'
 import Main from './main/main'
@@ -6,7 +7,7 @@ import Calc from './calc/calc'
 import Logo from './logo/logo'
 
 import Image from 'next/image'
-import logo from '/public/img/logo.png'
+// import logo from '/public/img/logo.png'
 import Search from './search/search'
 import Calendar from './calendar/calendar'
 

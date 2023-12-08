@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { cn } from '@/lib/utils'
-import type { ExeItem } from '@/lib/exe-data'
+import { cn } from '../../lib/utils'
+import type { ExeItem } from '../../lib/exe-data'
 
 type Props = {
   item: ExeItem

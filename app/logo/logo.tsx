@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import logo from '@/public/img/logo.png'
+import logo from '@/../public/img/logo.png'
 
 function Logo() {
   const handleClick = () => {
-    window.open('https://ink-monkey.officechat.com/', '_blank', 'width=780,height=560,left=1200,top=600')
+    window.open('https://ink-monkey.com/', '_blank')
   }
   return (
     <div className='relative w-[400px] '>

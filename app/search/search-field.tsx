@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import icon from '@/public/img/search.svg'
+import icon from '@/../public/img/search.svg'
 import { useRef } from 'react'
 
 interface Props {
