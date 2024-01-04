@@ -7,24 +7,30 @@ interface Props {
   item: {
     label: string
     url: string
+    query: string
   }
 }
 
 function SearchField({ item }: Props) {
   const inputRef = useRef<HTMLInputElement>(null)
+  const { label, url, query } = item
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const query = inputRef.current?.value
-    if (query) {
-      window.open(`${item.url}${query}`)
+    const queryString = inputRef.current?.value
+    if (queryString) {
+      window.open(`${item.url}${query}${queryString}`, `_blank`)
       inputRef.current.value = ''
     }
   }
 
   return (
     <form onSubmit={handleSubmit} className='flex items-center mb-3 w-full' key={item.label}>
-      <label className='flex w-1/3 text-xl'>{item.label}</label>
+      <label className='flex w-1/3 text-xl'>
+        <a target='_blank' href={item.url}>
+          {item.label}
+        </a>
+      </label>
       <input ref={inputRef} className='flex p-2 w-full text-black' type='text' />
       <button className='bg-white flex h-10 px-4 items-center' type='submit'>
         <Image alt='search' src={icon} width={40} />
