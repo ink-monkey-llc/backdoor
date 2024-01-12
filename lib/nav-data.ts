@@ -52,11 +52,25 @@ export const navData = [
       { name: 'inkmonkeyllc.com', url: 'https://inkmonkeyllc.com/' },
       { name: 'ink-monkey.com', url: 'https://ink-monkey.com/' },
       { name: 'Payroll Calc.', url: 'https://www.adp.com/resources/tools/calculators/states/missouri-salary-paycheck-calculator.aspx' },
-      
+
       { name: 'Email (Godaddy)', url: 'https://sso.godaddy.com/?app=o365&realm=pass&marketid=en-US' },
       { name: 'Email (Gmail)', url: 'https://mail.google.com/mail/u/0/#inbox' },
-      {name: 'Payroll', url: 'https://online.adp.com/signin/v1/?APPID=RUN&productId=80e309c3-70c3-bae1-e053-3505430b5495&Action=Login&Mode=BROWSER&Stc=False&ssru=branded'},
-      {name: 'Decal Pricing', url: 'https://www.decals.com/bulk-order-stickers'},
+      {
+        name: 'Payroll',
+        url: 'https://online.adp.com/signin/v1/?APPID=RUN&productId=80e309c3-70c3-bae1-e053-3505430b5495&Action=Login&Mode=BROWSER&Stc=False&ssru=branded',
+      },
+      { name: 'Decal Pricing', url: 'https://www.decals.com/bulk-order-stickers' },
+    ],
+  },
+  {
+    label: 'Sales Channels',
+    path: '/sales-channels',
+    links: [
+      { name: 'Facebook', url: 'https://www.facebook.com/61552114471169/professional_dashboard' },
+      { name: 'Instagram', url: 'https://www.instagram.com/inkmonkeyllc' },
+      { name: 'Ebay', url: 'https://www.ebay.com/sh/ovw' },
+      { name: 'Etsy', url: 'https://www.etsy.com/your/shops/me/dashboard' },
+      { name: 'Bonanza', url: 'https://www.bonanza.com/selling_dashboard' },
     ],
   },
   { label: 'Contact Info', path: '/contact-info' },
