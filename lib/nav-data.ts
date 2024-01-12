@@ -71,6 +71,7 @@ export const navData = [
       { name: 'Ebay', url: 'https://www.ebay.com/sh/ovw' },
       { name: 'Etsy', url: 'https://www.etsy.com/your/shops/me/dashboard' },
       { name: 'Bonanza', url: 'https://www.bonanza.com/selling_dashboard' },
+      { name: 'Shopify', url: 'https://admin.shopify.com/store/7c5018-3/' },
     ],
   },
   { label: 'Contact Info', path: '/contact-info' },
