@@ -61,6 +61,7 @@ export const navData = [
       },
       { name: 'Decal Pricing', url: 'https://www.decals.com/bulk-order-stickers' },
       { name: 'Cloudinary Image Storage', url: 'https://console.cloudinary.com/console/c-e1c1d59da7db78667deba7dcb6e349/media_library/homepage' },
+      { name: 'OfficeChat', url: 'https://ink-monkey.officechat.com/' },
     ],
   },
   {
