@@ -25,6 +25,7 @@ export const navData = [
         url: ' https://www.adobe.com/products/catalog.html#category=creativity-design&types=desktop',
       },
       { name: 'A.I. Image Larger', url: 'https://imglarger.com/' },
+      { name: 'Cloudinary Image Storage', url: 'https://console.cloudinary.com/console/c-e1c1d59da7db78667deba7dcb6e349/media_library/homepage' },
     ],
   },
   {
