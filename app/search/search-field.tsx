@@ -19,7 +19,7 @@ function SearchField({ item }: Props) {
     e.preventDefault()
     const queryString = inputRef.current?.value
     if (queryString) {
-      window.open(`${item.url}${query}${queryString}`, `_blank`)
+      window.open(`${item.url}${query}${queryString}`,  '_self')
       inputRef.current.value = ''
     }
   }

@@ -13,9 +13,9 @@ function MenuLink({ link, index }: MenuLinkProps) {
   return (
     <div className=' menu-animation opacity-0 bg-[#2b2c2c]' style={{ '--i': index } as React.CSSProperties}>
       <a
-        rel='noreferrer noopener'
+      
         id={index.toString()}
-        target='_blank'
+      
         href={link.url}
         key={link.name}
         className={cn(`block text-white text-start py-1 px-2 hover:bg-[#4A4A4A] m-auto`)}>

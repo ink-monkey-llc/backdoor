@@ -5,7 +5,7 @@ import logo from '@/../public/img/logo.png'
 
 function Logo() {
   const handleClick = () => {
-    window.open('https://ink-monkey.com/', '_blank')
+    window.open('https://ink-monkey.com/', '_self')
   }
   return (
     <div className='relative w-[400px] '>

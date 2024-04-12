@@ -13,8 +13,6 @@ function Item({ item }: Props) {
 
   return (
     <a
-      rel='noreferrer noopener'
-      target='_blank'
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={cn(`w-[100px] h-[102px]`)}
