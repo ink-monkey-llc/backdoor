@@ -64,6 +64,10 @@ export const navData = [
    { name: 'Cloudinary Image Storage', url: 'https://console.cloudinary.com/console/c-e1c1d59da7db78667deba7dcb6e349/media_library/homepage' },
    { name: 'OfficeChat', url: 'https://ink-monkey.officechat.com/' },
    { name: 'Google Ads', url: 'https://ads.google.com/nav/login?subid=us-en-awhp-g-aw-c-home-signin!o2-adshp-hv-q4-22' },
+   {
+    name: 'Midjourney Discord Server',
+    url: 'https://discord.com/channels/1220010490999078983/1220010490999078986',
+   },
   ],
  },
  {
