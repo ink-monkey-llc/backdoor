@@ -30,6 +30,10 @@ export const navData = [
     name: 'Midjourney Discord Server',
     url: 'https://discord.com/channels/1220010490999078983/1220010490999078986',
    },
+   {
+    name: 'Fonz Unrestricted',
+    url: 'https://fonz.vercel.app/',
+   },
   ],
  },
  {
