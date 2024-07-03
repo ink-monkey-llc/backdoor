@@ -72,7 +72,7 @@ export const navData = [
    { name: 'Cloudinary Image Storage', url: 'https://console.cloudinary.com/console/c-e1c1d59da7db78667deba7dcb6e349/media_library/homepage' },
    { name: 'OfficeChat', url: 'https://ink-monkey.officechat.com/' },
    { name: 'Google Ads', url: 'https://ads.google.com/nav/login?subid=us-en-awhp-g-aw-c-home-signin!o2-adshp-hv-q4-22' },
-   { name: 'Notion', url: 'https://www.notion.so/082ad2d2f44b48d8aa62f52a09f27538?v=b9c21d0ac3944e39b7d50f27ea39654c&pvs=4' },
+   { name: 'Plaky', url: 'https://ink-monkey-llc-squad.plaky.com/login' },
   ],
  },
  {
