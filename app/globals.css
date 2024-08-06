@@ -5,15 +5,13 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
+  --dark: #1d1d1d;
 }
-
-
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb))
 }
-
 
 .menu-animation {
   animation: rotateAnimation 300ms ease-in-out forwards;
