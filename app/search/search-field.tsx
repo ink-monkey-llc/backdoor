@@ -38,16 +38,16 @@ function SearchField({ item }: Props) {
    </label>
    <input
     ref={inputRef}
-    className='flex p-1 w-full text-black'
+    className='flex  w-full text-black'
     type='text'
    />
    <button
-    className='bg-white flex h-8 px-4 items-center'
+    className='bg-white flex h-6 px-4 items-center'
     type='submit'>
     <Image
      alt='search'
      src={icon}
-     width={40}
+     width={32}
     />
    </button>
   </form>

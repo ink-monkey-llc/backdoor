@@ -9,7 +9,7 @@ function Icon({ num, index, sortedData }: { num: number; index: number; sortedDa
  }
  const iconId = data.icon <= 9 ? `0${data.icon}` : data.icon
  const iconUrl = `https://developer.accuweather.com/sites/default/files/${iconId}-s.png`
- console.log(data.icon)
+ //  console.log(data.icon)
  return (
   <div
    className={`icn icn${index + 1}`}

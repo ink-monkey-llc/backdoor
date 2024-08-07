@@ -37,10 +37,10 @@ export type SortedData = {
 async function ClockWeather() {
  const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
  const weatherData: WeatherData = await getWeather()
- console.log(weatherData)
+ //  console.log(weatherData)
  const nowHour = new Date().getHours()
  const currHour = nowHour % 12
- console.log(currHour)
+ //  console.log(currHour)
  const sortedData = weatherData.map((hour) => {
   const hourNum = new Date(hour.DateTime).getHours() % 12
   const icon = hour.WeatherIcon
@@ -50,7 +50,7 @@ async function ClockWeather() {
  })
 
  return (
-  <div className='clock-container scale-[60%] z-0'>
+  <div className='clock-container scale-[60%] -z-10'>
    <div className='clock-outer'></div>
    <div className='temps'>
     {nums.map((num, index) => (
