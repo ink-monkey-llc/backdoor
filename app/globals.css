@@ -6,6 +6,7 @@
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
   --dark: #1d1d1d;
+  --view-height: calc(100vh - 56px);
 }
 
 body {

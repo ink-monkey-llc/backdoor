@@ -14,17 +14,15 @@ import Calendar from './calendar/calendar'
 
 export default function Home() {
  return (
-  <main className='flex min-h-screen flex-col items-center m-auto'>
+  <main className='flex min-h-screen flex-col items-center justify-center m-auto'>
    <Header />
    <Main>
-    <div className='flex h-[40vh] gap-4 m-auto'>
-     <Exe />
+    <div className='flex relative h-[50vh] gap-4 m-auto '>
      <Logo />
-     <Calendar />
-    </div>
-    <div className='px-10 flex gap-4 m-auto h-1/2'>
      <ClockWeather />
-     {/* <Calc /> */}
+    </div>
+    <div className='px-10 flex gap-8 m-auto -mt-8 h-[40%]'>
+     <Calendar />
      <Search />
     </div>
    </Main>

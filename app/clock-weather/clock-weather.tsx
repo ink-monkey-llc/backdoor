@@ -4,11 +4,17 @@ import { getWeather } from '@/../app/actions/weather'
 import Temperature from './temperature'
 import Icon from './icon'
 import Hour from './hour'
+import Hands from './hands'
+import Desc from './desc'
+import Time from './time'
+import Weekday from './weekday'
+import MoDay from './mo-day'
 
 type WeatherData = {
  DateTime: string
  EpochDateTime: number
  WeatherIcon: number
+ IconPhrase: string
  HasPrecipitation: boolean
  IsDaylight: boolean
  Temperature: {
@@ -25,26 +31,26 @@ export type SortedData = {
  hourNum: number
  icon: number
  temp: number
+ phrase: string
 }[]
 
 async function ClockWeather() {
  const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
  const weatherData: WeatherData = await getWeather()
- const deg = '°'
  console.log(weatherData)
- const today = new Date()
- const currentTime = today.getHours()
- const currHour = currentTime % 12
+ const nowHour = new Date().getHours()
+ const currHour = nowHour % 12
  console.log(currHour)
  const sortedData = weatherData.map((hour) => {
   const hourNum = new Date(hour.DateTime).getHours() % 12
   const icon = hour.WeatherIcon
   const temp = hour.Temperature.Value
-  return { hourNum, icon, temp }
+  const phrase = hour.IconPhrase
+  return { hourNum, icon, temp, phrase }
  })
 
  return (
-  <div className='clock-container'>
+  <div className='clock-container scale-[60%] z-0'>
    <div className='clock-outer'></div>
    <div className='temps'>
     {nums.map((num, index) => (
@@ -74,17 +80,11 @@ async function ClockWeather() {
       key={`hour${index}`}
      />
     ))}
-
-    <div
-     id='hour-hand'
-     className='hand hour'></div>
-    <div
-     id='minute-hand'
-     className='hand minute'></div>
-    <div
-     id='second-hand'
-     className='hand second'></div>
-
+    <Time />
+    <MoDay />
+    <Weekday />
+    <Desc sortedData={sortedData} />
+    <Hands />
     <div id='small-circle'></div>
    </div>
   </div>

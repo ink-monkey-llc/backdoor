@@ -1,8 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+.nunito-sans-desc {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+#time {
+  font-weight: 600
+}
+
+.inset-border {
+  box-shadow: inset 0 0 0 1px #ffffff63;
+}
 
 .clock-outer {
-  width: 400px;
-  height: 400px;
+  width: 332px;
+  height: 332px;
   border: 15px solid #202020;
   border-radius: 50%;
   position: relative;
@@ -10,41 +28,43 @@
 }
 
 .clock {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   /* border: 2px solid black; */
   border-radius: 50%;
   position: absolute;
-  background: radial-gradient(#505050, 35%, #000);
+  background: radial-gradient(#505050, #000 85%, #000);
   font-family: 'Oswald', sans-serif;
 }
 
 .icons {
-  width: 330px;
-  height: 330px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   position: absolute;
-  background: radial-gradient(#505050, 35%, #000);
+  background: radial-gradient(#505050, #000 85%, #000);
 }
 
 .temps {
-  width: 380px;
-  height: 380px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   position: absolute;
-  background: radial-gradient(#505050, 35%, #000);
+  background: radial-gradient(#505050, #000 85%, #000);
 }
 
 .clock-container {
-  position: relative;
+  position: absolute;
+  left: 65%;
+  top: -85px;
   display: flex;
-  width: 600px;
   justify-content: center;
   align-items: center;
   font-family: 'Oswald', sans-serif;
-  background: url('/img/rocktexture.jpg');
   background-size: cover;
   background-blend-mode: screen;
+  font-weight: lighter;
+
 }
 
 .clock-container:before {
@@ -54,7 +74,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(130deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 25%, rgba(0, 0, 0, .95)100%);
+  background: linear-gradient(130deg, rgba(0, 0, 0, 0.288) 0%, rgba(0, 0, 0, .95)30%);
 }
 
 .clock .number {
@@ -70,40 +90,43 @@
   --rotation: 10;
   position: absolute;
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.61);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   left: 50%;
   bottom: 50%;
   transform-origin: bottom;
-  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+
 }
 
 .clock .hand.minute {
-  height: 40%;
+  height: 84%;
   width: 5px;
+  background-color: #505050;
 }
 
 #small-circle {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  border: 2px solid #ffffff88;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: red;
+  background: linear-gradient(to bottom, rgb(87, 87, 87)1%, rgb(0, 0, 0) 50%);
   left: 50%;
-  bottom: 48%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .clock .hand.second {
-  height: 48%;
+  height: 90%;
   width: 3px;
   background: red;
 }
 
 .clock .hand.hour {
-  height: 30%;
+  height: 50%;
   width: 10px;
+  background-color: #505050;
 }
 
 .clock-container-2 {
@@ -125,7 +148,7 @@
   border-right: 1px solid black;
   width: 40px;
   height: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .clock-container-2 #month {
@@ -134,7 +157,7 @@
   align-items: center;
   width: 40px;
   height: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .inner-num {
@@ -151,6 +174,10 @@
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+.icn-num {
+  margin-top: 2px;
 }
 
 .temp {

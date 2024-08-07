@@ -14,12 +14,12 @@ function Icon({ num, index, sortedData }: { num: number; index: number; sortedDa
   <div
    className={`icn icn${index + 1}`}
    key={index}>
-   <div className={`mt-4 inner-num num${index + 1}`}>
+   <div className={` inner-num num${index + 1} `}>
     <Image
      src={iconUrl}
      alt='icon'
-     width={24}
-     height={24}
+     width={64}
+     height={64}
     />
    </div>
   </div>
