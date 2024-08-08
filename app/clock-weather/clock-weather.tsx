@@ -50,7 +50,7 @@ async function ClockWeather() {
  })
 
  return (
-  <div className='clock-container scale-[60%] -z-10'>
+  <div className='clock-container scale-[60%] -z-10 2xl:mt-6 '>
    <div className='clock-outer'></div>
    <div className='temps'>
     {nums.map((num, index) => (

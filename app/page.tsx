@@ -17,7 +17,6 @@ export default function Home() {
    <Main>
     <div className={cn('flex relative h-[50vh] gap-4 m-auto')}>
      <Buttons />
-
      <ClockWeather />
     </div>
     <div className='px-10 flex gap-8 m-auto -mt-8 h-[40vh]'>

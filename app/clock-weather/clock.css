@@ -65,6 +65,9 @@
   background-blend-mode: screen;
   font-weight: lighter;
 
+  @media(min-width:1500px) {
+    left: 73%;
+  }
 }
 
 .clock-container:before {
