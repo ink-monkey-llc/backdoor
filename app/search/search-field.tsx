@@ -27,7 +27,7 @@ function SearchField({ item }: Props) {
  return (
   <form
    onSubmit={handleSubmit}
-   className='flex items-center mb-3 w-full'
+   className='flex  items-center mb-[10px] w-full z-50 relative'
    key={item.label}>
    <label className='flex w-1/3 text-xl'>
     <a
@@ -38,11 +38,11 @@ function SearchField({ item }: Props) {
    </label>
    <input
     ref={inputRef}
-    className='flex  w-full text-black'
+    className=' rounded-l-sm text-semibold flex text-xl w-full text-black pl-1'
     type='text'
    />
    <button
-    className='bg-white flex h-6 px-4 items-center'
+    className='bg-white rounded-r-sm flex h-[28px] px-4 items-center '
     type='submit'>
     <Image
      alt='search'
