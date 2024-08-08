@@ -1,7 +1,5 @@
 import SearchField from './search-field'
 import { searchData } from '@/../lib/search-data'
-import icon from '@/../public/img/search.svg'
-import Image from 'next/image'
 
 function Search() {
  return (

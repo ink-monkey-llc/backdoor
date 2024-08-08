@@ -2,7 +2,7 @@ import React from 'react'
 import './clock.css'
 import { getWeather } from '@/../app/actions/weather'
 import Temperature from './temperature'
-import Icon from './icon'
+import IconRing from './icon-ring'
 import Hour from './hour'
 import Hands from './hands'
 import Desc from './desc'
@@ -55,7 +55,7 @@ async function ClockWeather() {
    <div className='temps'>
     {nums.map((num, index) => (
      <Temperature
-      sortedData={sortedData as SortedData}
+      sortedData={sortedData}
       num={num}
       index={index}
       key={`temp${index}`}
@@ -64,8 +64,8 @@ async function ClockWeather() {
    </div>
    <div className='icons'>
     {nums.map((num, index) => (
-     <Icon
-      sortedData={sortedData as SortedData}
+     <IconRing
+      sortedData={sortedData}
       num={num}
       index={index}
       key={`icon${index}`}

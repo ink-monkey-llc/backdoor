@@ -1,7 +1,7 @@
 'use client'
 import { getRotation } from 'lib/utils'
 import { useInterval } from 'usehooks-ts'
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 
 function Hands() {
  const [hours, setHours] = useState(0)

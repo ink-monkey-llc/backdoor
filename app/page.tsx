@@ -1,16 +1,12 @@
 import React from 'react'
 import Header from './header/header'
-import Weather from './weather/weather'
 import { cn } from 'lib/utils'
 import ClockWeather from './clock-weather/clock-weather'
 import Main from './main/main'
 import Exe from './exe/exe'
 import Scale from './scale'
-import Calc from './calc/calc'
 import Logo from './logo/logo'
 
-import Image from 'next/image'
-// import logo from '/public/img/logo.png'
 import Search from './search/search'
 import Calendar from './calendar/calendar'
 

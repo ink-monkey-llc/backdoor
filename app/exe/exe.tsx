@@ -1,6 +1,6 @@
 import Item from './item'
 import { exeData } from '@/../lib/exe-data'
-import type { ExeData, ExeItem } from '@/../lib/exe-data'
+import type { ExeItem } from '@/../lib/exe-data'
 
 function Exe() {
  return (

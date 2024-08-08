@@ -1,11 +1,13 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import { SortedData } from './clock-weather'
 
-function Icon({ num, index, sortedData }: { num: number; index: number; sortedData: SortedData }) {
- let data = sortedData.find((item) => item.hourNum === num)
+function IconRing({ num, index, sortedData }: { num: number; index: number; sortedData: SortedData }) {
+ if (!sortedData) return null
+ let data = sortedData ? sortedData.find((item) => item.hourNum === num) : null
  if (num === 12) {
-  data = sortedData.find((item) => item.hourNum === 0)
+  data = sortedData ? sortedData.find((item) => item.hourNum === 0) : null
  }
  const iconId = data.icon <= 9 ? `0${data.icon}` : data.icon
  const iconUrl = `https://developer.accuweather.com/sites/default/files/${iconId}-s.png`
@@ -26,4 +28,4 @@ function Icon({ num, index, sortedData }: { num: number; index: number; sortedDa
  )
 }
 
-export default Icon
+export default IconRing
