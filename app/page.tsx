@@ -4,7 +4,7 @@ import { cn } from 'lib/utils'
 import ClockWeather from './clock-weather/clock-weather'
 import Main from './main/main'
 import Exe from './exe/exe'
-import Scale from './scale'
+import Buttons from './buttons'
 import Logo from './logo/logo'
 
 import Search from './search/search'
@@ -16,10 +16,8 @@ export default function Home() {
    <Header />
    <Main>
     <div className={cn('flex relative h-[50vh] gap-4 m-auto')}>
-     <Scale>
-      <Exe />
-      <Logo />
-     </Scale>
+     <Buttons />
+
      <ClockWeather />
     </div>
     <div className='px-10 flex gap-8 m-auto -mt-8 h-[40vh]'>
