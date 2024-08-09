@@ -7,21 +7,26 @@ interface Link {
 interface MenuLinkProps {
  link: Link
  index: number
+ len: number
 }
 
-function MenuLink({ link, index }: MenuLinkProps) {
+function MenuLink({ len, link, index }: MenuLinkProps) {
  return (
   <div
-   className='relative menu-animation opacity-0 bg-[#2b2c2c] z-50'
+   className={cn(
+    'border-x border-slate-300 relative menu-animation opacity-0 bg-[#2b2c2c] z-50',
+    index === len - 1 ? 'border-b rounded-b-sm' : '',
+    index === 0 ? 'rounded-t-sm' : ''
+   )}
    style={{ '--i': index } as React.CSSProperties}>
    <a
     id={index.toString()}
     href={link.url}
     key={link.name}
-    className={cn(`block text-white text-start py-1 px-2 hover:bg-[#4A4A4A] m-auto`)}>
+    className={cn(`block text-white text-start py-1 px-2 hover:bg-[#4A4A4A] transition-all m-auto`)}>
     {link.name}
    </a>
-   <div className='h-[1px] bg-slate-300 opacity-50 m-auto' />
+   <div className={cn('h-[1px] bg-slate-300 opacity-50 m-auto', index === len - 1 ? 'hidden' : '')} />
   </div>
  )
 }
