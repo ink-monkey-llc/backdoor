@@ -73,6 +73,7 @@ export const navData = [
    { name: 'OfficeChat', url: 'https://ink-monkey.officechat.com/' },
    { name: 'Google Ads', url: 'https://ads.google.com/nav/login?subid=us-en-awhp-g-aw-c-home-signin!o2-adshp-hv-q4-22' },
    { name: 'Plaky', url: 'https://ink-monkey-llc-squad.plaky.com/login' },
+   { name: 'Survey results reader', url: 'https://www.jrr.at/reader' },
   ],
  },
  {
