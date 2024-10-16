@@ -58,12 +58,10 @@ export const navData = [
    { name: 'Amazon', url: 'https://www.amazon.com/' },
    { name: 'Etsy', url: 'https://www.etsy.com/' },
    { name: 'Bonanza', url: 'https://www.bonanza.com/home/login?return_to=https%3A%2F%2Fwww.bonanza.com%2F' },
-   { name: 'inkmonkeyllc.com', url: 'https://inkmonkeyllc.com/' },
    { name: 'ink-monkey.com', url: 'https://ink-monkey.com/' },
    { name: 'Payroll Calc.', url: 'https://www.adp.com/resources/tools/calculators/states/missouri-salary-paycheck-calculator.aspx' },
 
-   { name: 'Email (Godaddy)', url: 'https://sso.godaddy.com/?app=o365&realm=pass&marketid=en-US' },
-   { name: 'Email (Gmail)', url: 'https://mail.google.com/mail/u/0/#inbox' },
+   { name: 'Email Portal', url: 'https://webmail-oxcs.networksolutionsemail.com/appsuite/' },
    {
     name: 'Payroll',
     url: 'https://online.adp.com/signin/v1/?APPID=RUN&productId=80e309c3-70c3-bae1-e053-3505430b5495&Action=Login&Mode=BROWSER&Stc=False&ssru=branded',
@@ -73,7 +71,6 @@ export const navData = [
    { name: 'OfficeChat', url: 'https://ink-monkey.officechat.com/' },
    { name: 'Google Ads', url: 'https://ads.google.com/nav/login?subid=us-en-awhp-g-aw-c-home-signin!o2-adshp-hv-q4-22' },
    { name: 'Plaky', url: 'https://ink-monkey-llc-squad.plaky.com/login' },
-   { name: 'Survey results reader', url: 'https://www.jrr.at/reader' },
   ],
  },
  {
