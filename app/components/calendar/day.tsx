@@ -28,25 +28,25 @@ function Day({ day, index, events, todayWeather }: Props) {
  }, [color])
 
  return (
-  <DayDetail
-   todayWeather={todayWeather}
-   events={eventsForDay}
-   currentColor={currentColor}
-   day={day}>
-   <div className={cn('relative day-bg opacity-40 w-[108px] h-[108px] m-auto tablet:mb-[12px] desktop:mb-0', isThisMonth && 'opacity-100')}>
-    <div className='absolute bg-black rounded-xl top-[9px] right-[9px] left-[4px] bottom-[4px] z-0' />
-    {/* <Suspense fallback={<div className='w-[108px] h-[108px] z-50'>Loading...</div>}> */}
-    <DayContent
-     day={day}
-     index={index}
-     eventsForDay={eventsForDay}
-     todayWeather={todayWeather}
-     currentColor={currentColor}
-    />
-    {/* </Suspense> */}
-    <div className='gloss absolute top-[8px] left-1 right-[8px] bottom-10 z-20' />
-   </div>
-  </DayDetail>
+  <Suspense fallback={<div className='min-w-[108px] min-h-[108px] z-50'>Loading...</div>}>
+   <DayDetail
+    todayWeather={todayWeather}
+    events={eventsForDay}
+    currentColor={currentColor}
+    day={day}>
+    <div className={cn('relative day-bg opacity-40 min-w-[108px] min-h-[108px] m-auto tablet:mb-[12px] desktop:mb-0', isThisMonth && 'opacity-100')}>
+     <div className='absolute bg-black rounded-xl top-[9px] right-[9px] left-[4px] bottom-[4px] z-0' />
+     <DayContent
+      day={day}
+      index={index}
+      eventsForDay={eventsForDay}
+      todayWeather={todayWeather}
+      currentColor={currentColor}
+     />
+     <div className='gloss absolute top-[8px] left-1 right-[8px] bottom-10 z-20' />
+    </div>
+   </DayDetail>
+  </Suspense>
  )
 }
 

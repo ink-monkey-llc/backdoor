@@ -42,7 +42,7 @@ export function splitDateString(dateString: string): { month: number; year: numb
  return { month: parseInt(month, 10), year: parseInt(year, 10) }
 }
 
-export function getNextMonthYear(month: number, year: number): string {
+export function getNextMonthYear(month: number, year: number): { month: number; year: number } {
  let nextMonth: number
  let nextYear: number
 
@@ -54,10 +54,10 @@ export function getNextMonthYear(month: number, year: number): string {
   nextYear = year // Same year
  }
 
- return `${nextMonth}_${nextYear}`
+ return { month: nextMonth, year: nextYear }
 }
 
-export function getLastMonthYear(month: number, year: number): string {
+export function getLastMonthYear(month: number, year: number): { month: number; year: number } {
  let lastMonth: number
  let lastYear: number
 
@@ -69,7 +69,7 @@ export function getLastMonthYear(month: number, year: number): string {
   lastYear = year // Same year
  }
 
- return `${lastMonth}_${lastYear}`
+ return { month: lastMonth, year: lastYear }
 }
 
 export function trunc(input: string, numChars = 8, elipsis = false): string {

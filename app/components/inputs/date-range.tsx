@@ -15,7 +15,7 @@ function DateRange() {
   }
  }
 
- //  console.log('daterange', startDate, endDate)
+ console.log('daterange', startDate, endDate)
 
  return (
   <div className='border flex gap-2 items-center justify-between w-max border-white/20  rounded-lg pl-2 mt-2'>
@@ -23,25 +23,23 @@ function DateRange() {
     selected={startDate}
     popperPlacement='left-start'
     className='bg-transparent cursor-pointer w-36 text-sm'
-    onChange={(date) => onStartDateChange(date as unknown as Date)}
+    onChange={(date: Date | null) => onStartDateChange(date as Date)}
     dateFormat='MMMM d, yyyy'
     selectsStart
     startDate={startDate}
     endDate={endDate}
-    selectsRange
    />
    <span>-</span>
    <DatePicker
     selected={endDate}
     popperPlacement='left-start'
     className='bg-transparent w-36 cursor-pointer text-sm ml-2'
-    onChange={(date) => setEndDate(date as unknown as Date)}
+    onChange={(date: Date | null) => setEndDate(date as Date)}
     dateFormat='MMMM d, yyyy'
     selectsEnd
     startDate={startDate}
     endDate={endDate}
     minDate={startDate}
-    selectsRange
    />
   </div>
  )

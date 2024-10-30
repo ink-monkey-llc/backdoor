@@ -11,7 +11,7 @@ import Search from './search/search'
 import Calendar from './calendar/calendar'
 import CalMain from './cal/cal-main'
 
-export default function Home({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
+export default function Home() {
  return (
   <main className='flex min-h-screen flex-col items-center justify-center m-auto'>
    <Header />
@@ -27,7 +27,7 @@ export default function Home({ searchParams }: { searchParams: { [key: string]: 
        <Search />
       </div>
      </div>
-     <CalMain searchParams={searchParams} />
+     <CalMain />
     </div>
    </Main>
   </main>

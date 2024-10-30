@@ -77,11 +77,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background-position: center;
   background-repeat: no-repeat;
 
-  @media(max-width:1221px) {
+  @media(max-width:1850px) {
     background-image: url('/tablet.png');
   }
 
-  @media (max-width:780px) {
+  @media (max-width:1456px) {
     background-image: url('/mobile.png');
   }
 }

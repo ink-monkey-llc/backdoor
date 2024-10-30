@@ -48,9 +48,9 @@ const config: Config = {
    },
   },
   screens: {
-   'lg-mb': '500px',
-   tablet: '780px',
-   desktop: '1221px',
+   'lg-mb': '1124px',
+   tablet: '1456px',
+   desktop: '1850px',
   },
  },
  plugins: [],
