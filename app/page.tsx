@@ -9,19 +9,25 @@ import Logo from './logo/logo'
 
 import Search from './search/search'
 import Calendar from './calendar/calendar'
+import CalMain from './cal/cal-main'
 
-export default function Home() {
+export default function Home({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
  return (
   <main className='flex min-h-screen flex-col items-center justify-center m-auto'>
    <Header />
    <Main>
-    <div className={cn('flex relative h-[50vh] gap-4 m-auto')}>
-     <Buttons />
-     <ClockWeather />
-    </div>
-    <div className='px-10 flex gap-8 m-auto -mt-8 h-[40vh]'>
-     <Calendar />
-     <Search />
+    <div className='flex items-start justify-center h-full w-full'>
+     <div className='flex flex-col'>
+      <div className={cn('flex relative h-[50vh] gap-4 m-auto')}>
+       <Buttons />
+       <ClockWeather />
+      </div>
+      <div className='px-10 flex gap-8 m-auto -mt-8 h-[40vh]'>
+       {/* <Calendar /> */}
+       <Search />
+      </div>
+     </div>
+     <CalMain searchParams={searchParams} />
     </div>
    </Main>
   </main>

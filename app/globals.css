@@ -11,7 +11,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb))
+  background: rgb(var(--background-rgb));
+  scrollbar-width: thin;
 }
 
 .menu-animation {
@@ -33,4 +34,75 @@ body {
     opacity: 1;
     transform: rotateX(0deg);
   }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+input:focus-within {
+  outline: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: url('/clock.png');
+  background-size: 100% 100%;
+}
+
+.react-datepicker__calendar-icon {
+  left: -6px;
+  fill: white;
+}
+
+
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-primary) transparent;
+}
+
+.hover-bg {
+  background-color: black
+}
+
+.hover-bg:hover {
+  background-color: var(--current);
+}
+
+.calendar-wrapper {
+  background-image: url('/desktop.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media(max-width:1221px) {
+    background-image: url('/tablet.png');
+  }
+
+  @media (max-width:780px) {
+    background-image: url('/mobile.png');
+  }
+}
+
+.gloss {
+  background-image: url('/gloss.png');
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.day-bg {
+  background-image: url('/bg.png');
+  background-size: 107% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.detail-bg {
+  background-image: url('/bg-lg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
