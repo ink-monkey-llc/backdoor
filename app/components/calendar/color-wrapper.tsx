@@ -6,7 +6,7 @@ import { useLocalStorage } from 'usehooks-ts'
 import { inter } from '../../../fonts'
 
 function ColorWrapper({ children }: { children: React.ReactNode }) {
- const [color, setColor] = useLocalStorage<ColorOption>('color', colorDefault)
+ const [color, setColor] = useLocalStorage<ColorOption>('color', colorOptions[0])
  const [currentColor, setCurrentColor] = useState<ColorOption>()
 
  useEffect(() => {
