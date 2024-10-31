@@ -8,7 +8,7 @@ async function AuthBtn() {
   if (session) {
    await signOut()
   } else {
-   await signIn()
+   await signIn('google')
   }
  }
  return (

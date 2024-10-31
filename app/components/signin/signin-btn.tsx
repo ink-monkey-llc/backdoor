@@ -5,7 +5,7 @@ import { Login } from '../icons/login'
 export default async function SignInBtn() {
  const handleAction = async () => {
   'use server'
-  await signIn()
+  await signIn('google')
  }
  return (
   <form

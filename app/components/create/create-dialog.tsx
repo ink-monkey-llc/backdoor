@@ -1,15 +1,17 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import { useLocalStorage } from 'usehooks-ts'
+import { useLocalStorage, useWindowSize } from 'usehooks-ts'
 import { Dialog, DialogTrigger, DialogContent, DialogContainer } from '../../components/motion/dialog'
 import { CreateIcon } from '../icons/create'
 import { cn } from '../../../lib/utils'
 import { ColorOption, colorDefault } from '../../../types/types'
 import CreateContent from './create-content'
 
-function CreateDialog({ isMobile = false }: { isMobile?: boolean }) {
+function CreateDialog() {
  const [color, setColor] = useLocalStorage<ColorOption>('color', colorDefault)
  const [currentColor, setCurrentColor] = useState<ColorOption>(colorDefault)
+ const { width } = useWindowSize()
+ const isMobile = width < 1456
  useEffect(() => {
   setCurrentColor(color)
  }, [color])
