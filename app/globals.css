@@ -25,6 +25,10 @@ body {
   animation-delay: calc(var(--i) * 20ms);
 }
 
+.hilite {
+  border: red dashed 2px
+}
+
 @keyframes rotateAnimation {
   0% {
     opacity: 0;

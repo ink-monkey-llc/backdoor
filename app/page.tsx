@@ -16,14 +16,13 @@ export default function Home() {
   <main className='flex min-h-screen flex-col items-center justify-center m-auto'>
    <Header />
    <Main>
-    <div className='flex items-start justify-center h-full w-full'>
-     <div className='flex flex-col'>
+    <div className='flex desktop:flex-col-reverse desktop:gap-8 items-start desktop:items-center justify-center h-full  w-full '>
+     <div className='flex flex-col desktop:flex-row'>
       <div className={cn('flex relative h-[50vh] gap-4 m-auto')}>
        <Buttons />
        <ClockWeather />
       </div>
-      <div className='px-10 flex gap-8 m-auto -mt-8 h-[40vh]'>
-       {/* <Calendar /> */}
+      <div className=' px-10 flex gap-8 m-auto my-auto h-[40vh] '>
        <Search />
       </div>
      </div>

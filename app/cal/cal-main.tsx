@@ -11,8 +11,6 @@ import { Providers } from 'lib/rq/providers'
 async function CalMain() {
  const session = await auth()
 
- //  console.log(session)
-
  const handleAction = async () => {
   'use server'
   if (session) {

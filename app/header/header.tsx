@@ -3,7 +3,7 @@ import { navData } from '@/../lib/nav-data'
 
 function Header() {
  return (
-  <div className='flex flex-col w-full bg-[#333]'>
+  <div className='flex flex-col w-full bg-[#333] fixed top-0 z-20'>
    <div className='h-1 w-full bg-gradient-to-r from-[#e4d197] via-[#8e4f0a] to-[#e4d197]'> </div>
    <div className='h-12 w-1200 flex gap-6  items-center px-4 m-auto '>
     {navData.map((navButton) => {

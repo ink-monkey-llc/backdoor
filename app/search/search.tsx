@@ -3,7 +3,7 @@ import { searchData } from '@/../lib/search-data'
 
 function Search() {
  return (
-  <div className='pt-6 w-[500px]'>
+  <div className='pt-6 w-[500px] '>
    {searchData.map((item, index) => {
     return (
      <SearchField
