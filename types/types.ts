@@ -107,6 +107,7 @@ export type ColorOption = {
  value: string
  text: string
  ul: string
+ opac: string
 }
 
 declare module 'react' {

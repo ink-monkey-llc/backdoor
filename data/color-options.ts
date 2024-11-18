@@ -6,6 +6,7 @@ export const colorOptions = [
   value: '#178942',
   text: '#ffffff',
   ul: '#17874230',
+  opac: '#17894260',
  },
  {
   id: 'or',
@@ -14,6 +15,7 @@ export const colorOptions = [
   value: '#F7921D',
   text: '#000000',
   ul: '#f7911d30',
+  opac: '#f7921d60',
  },
  {
   id: 're',
@@ -22,6 +24,7 @@ export const colorOptions = [
   value: '#ED2024',
   text: '#ffffff',
   ul: '#ed212530',
+  opac: '#ed202460',
  },
  {
   id: 'sk',
@@ -30,6 +33,7 @@ export const colorOptions = [
   value: '#3FBAEB',
   text: '#000000',
   ul: '#3db9eb30',
+  opac: '#3fbaeb60',
  },
  {
   id: 'yl',
@@ -38,6 +42,7 @@ export const colorOptions = [
   value: '#F4D90D',
   text: '#000000',
   ul: '#f4d80b30',
+  opac: '#f4d90d60',
  },
  {
   id: 'bl',
@@ -46,6 +51,7 @@ export const colorOptions = [
   value: '#3D58A7',
   text: '#ffffff',
   ul: '#3e58a830',
+  opac: '#3d58a760',
  },
  {
   id: 'pi',
@@ -54,6 +60,7 @@ export const colorOptions = [
   value: '#EE3291',
   text: '#ffffff',
   ul: '#ee2f8f30',
+  opac: '#ee329160',
  },
  {
   id: 'lp',
@@ -62,6 +69,7 @@ export const colorOptions = [
   value: '#F4BAD5',
   text: '#000000',
   ul: '#f4b8d430',
+  opac: '#f4bad560',
  },
  {
   id: 'pu',
@@ -70,6 +78,7 @@ export const colorOptions = [
   value: '#8E4E9F',
   text: '#ffffff',
   ul: '#8c4d9d30',
+  opac: '#8e4e9f60',
  },
  {
   id: 'wh',
@@ -78,5 +87,6 @@ export const colorOptions = [
   value: '#D8D9D9',
   text: '#000000',
   ul: '#d8d9d930',
+  opac: '#d8d9d960',
  },
 ]
