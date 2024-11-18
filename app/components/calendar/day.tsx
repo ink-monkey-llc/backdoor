@@ -5,6 +5,7 @@ import { Day as DayType, CalendarEvent, FormattedWeather, ColorOption, colorDefa
 import DayDetail from '../detail/day-detail'
 import { cn } from '../../../lib/utils'
 import dynamic from 'next/dynamic'
+import dayjs from '../../../lib/dayjs'
 import DayContent from './day-content'
 
 type Props = {
@@ -22,6 +23,8 @@ function Day({ day, index, events, todayWeather }: Props) {
  //  const DayContent = dynamic(() => import('./day-content'), { ssr: false })
  //  const DayDetail = dynamic(() => import('../detail/day-detail'), { ssr: false })
 
+ const isToday = dayjs().format('YYYY-MM-DD') === day.date
+
  const isThisMonth = day.isCurrentMonth
  useEffect(() => {
   setCurrentColor(color)
@@ -34,8 +37,15 @@ function Day({ day, index, events, todayWeather }: Props) {
     events={eventsForDay}
     currentColor={currentColor}
     day={day}>
-    <div className={cn('relative day-bg opacity-40 min-w-[108px] min-h-[108px] m-auto tablet:mb-[12px] desktop:mb-0', isThisMonth && 'opacity-100')}>
-     <div className='absolute bg-black rounded-xl top-[9px] right-[9px] left-[4px] bottom-[4px] z-0' />
+    <div
+     className={cn(
+      'relative day-bg opacity-40 min-w-[108px] min-h-[108px] m-auto tablet:mb-[12px] desktop:mb-0 border-2 border-transparent ',
+      isThisMonth && 'opacity-100'
+     )}>
+     <div
+      style={{ backgroundColor: isToday ? currentColor.value : 'black', borderColor: isToday ? currentColor.text : 'transparent' }}
+      className={cn('absolute bg-black rounded-xl top-[9px] right-[9px] left-[4px] bottom-[4px] z-0 border')}
+     />
      <DayContent
       day={day}
       index={index}

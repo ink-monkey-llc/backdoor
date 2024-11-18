@@ -3,115 +3,117 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 0, 0, 0;
-  --dark: #1d1d1d;
-  --view-height: calc(100vh - 68px);
+ --foreground-rgb: 255, 255, 255;
+ --background-rgb: 0, 0, 0;
+ --dark: #1d1d1d;
+ --view-height: calc(100vh - 68px);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
-  scrollbar-width: thin;
+ color: rgb(var(--foreground-rgb));
+ background: rgb(var(--background-rgb));
+ scrollbar-width: thin;
 }
 
 * {
-  scrollbar-width: thin;
-  scrollbar-color: var(--bg-primary) transparent;
+ scrollbar-width: thin;
+ scrollbar-color: var(--bg-primary) transparent;
+}
+
+.temp {
+ color: #cccccc;
 }
 
 .menu-animation {
-  animation: rotateAnimation 300ms ease-in-out forwards;
-  animation-delay: calc(var(--i) * 20ms);
+ animation: rotateAnimation 300ms ease-in-out forwards;
+ animation-delay: calc(var(--i) * 20ms);
 }
 
 .hilite {
-  border: red dashed 2px
+ border: red dashed 2px;
 }
 
 @keyframes rotateAnimation {
-  0% {
-    opacity: 0;
-    transform: rotateX(-90deg);
-  }
+ 0% {
+  opacity: 0;
+  transform: rotateX(-90deg);
+ }
 
-  50% {
-    transform: rotateX(-20deg);
-  }
+ 50% {
+  transform: rotateX(-20deg);
+ }
 
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg);
-  }
+ 100% {
+  opacity: 1;
+  transform: rotateX(0deg);
+ }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+ .text-balance {
+  text-wrap: balance;
+ }
 }
 
 input:focus-within {
-  outline: none;
+ outline: none;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator {
-  background: url('/clock.png');
-  background-size: 100% 100%;
+input[type='time']::-webkit-calendar-picker-indicator {
+ background: url('/clock.png');
+ background-size: 100% 100%;
 }
 
 .react-datepicker__calendar-icon {
-  left: -6px;
-  fill: white;
+ left: -6px;
+ fill: white;
 }
 
-
-
 .scrollbar-thin {
-  scrollbar-width: thin;
-  scrollbar-color: var(--bg-primary) transparent;
+ scrollbar-width: thin;
+ scrollbar-color: var(--bg-primary) transparent;
 }
 
 .hover-bg {
-  background-color: black
+ background-color: black;
 }
 
 .hover-bg:hover {
-  background-color: var(--current);
+ background-color: var(--current);
 }
 
 .calendar-wrapper {
-  background-image: url('/desktop.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+ background-image: url('/desktop.png');
+ background-size: 100% 100%;
+ background-position: center;
+ background-repeat: no-repeat;
 
-  @media(max-width:1850px) {
-    background-image: url('/tablet.png');
-  }
+ @media (max-width: 1850px) {
+  background-image: url('/tablet.png');
+ }
 
-  @media (max-width:1456px) {
-    background-image: url('/mobile.png');
-  }
+ @media (max-width: 1456px) {
+  background-image: url('/mobile.png');
+ }
 }
 
 .gloss {
-  background-image: url('/gloss.png');
-  background-size: 100% 100%;
-  background-position: top;
-  background-repeat: no-repeat;
+ background-image: url('/gloss.png');
+ background-size: 100% 100%;
+ background-position: top;
+ background-repeat: no-repeat;
 }
 
 .day-bg {
-  background-image: url('/bg.png');
-  background-size: 107% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+ background-image: url('/bg.png');
+ background-size: 107% 100%;
+ background-position: center;
+ background-repeat: no-repeat;
 }
 
 .detail-bg {
-  background-image: url('/bg-lg.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+ background-image: url('/bg-lg.png');
+ background-size: 100% 100%;
+ background-position: center;
+ background-repeat: no-repeat;
 }

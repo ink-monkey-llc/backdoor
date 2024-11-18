@@ -29,22 +29,24 @@ function DayContent({
   }
  }
 
- const eventColor = currentColor.value ? currentColor.value : 'white'
+ const isToday = dayjs().format('YYYY-MM-DD') === day.date
+
+ const eventColor = isToday ? currentColor.text : currentColor.value
 
  return (
-  <div className='aspect-square relative rounded-lg z-10 flex justify-between flex-col'>
+  <div className='aspect-square relative rounded-lg z-10 flex justify-between flex-col '>
    <div
-    className='text-end p-2 pl-[7px]'
+    className=' text-end p-2 pl-[7px]'
     key={index}>
-    <div className=' flex justify-between pr-[6px] pt-[6px]'>
+    <div className='flex justify-between pr-[6px] pt-[6px]'>
      <div
-      style={{ backgroundColor: currentColor.value, color: currentColor.text }}
-      className='text-[.55rem] font-semibold flex justify-center items-center  rounded-[4px] py-0.5 mr-1 h-max w-[54px]'>
+      style={{ backgroundColor: currentColor.value, color: currentColor.text, borderColor: isToday ? currentColor.text : 'transparent' }}
+      className='text-[.55rem] font-semibold flex justify-center items-center border rounded-[4px] py-0.5 mr-1 h-max w-[54px]'>
       {dayLabel}
      </div>
      <div
-      style={{ backgroundColor: currentColor.value, color: currentColor.text }}
-      className='flex justify-center text-white text-lg rounded-[4px] w-[29px] '>
+      style={{ backgroundColor: currentColor.value, color: currentColor.text, borderColor: isToday ? currentColor.text : 'transparent' }}
+      className='flex justify-center text-white text-lg rounded-[4px] w-[29px] border '>
       {day.day}
      </div>
     </div>
@@ -62,18 +64,18 @@ function DayContent({
        <div
         style={{ color: eventColor }}
         className=' truncate ml-1'>
-        {trunc(event.summary, 13, true)}
+        {trunc(event.summary, 11, true)}
        </div>
       </div>
      ))}
    </div>
    <div
-    style={{ backgroundColor: currentColor.value, color: currentColor.text }}
-    className='flex justify-between font-semibold text-xs absolute bottom-[5px] right-[9px] left-[3px] pl-[6px] rounded-b-xl'>
-    <div className={cn(todayWeather ? 'opacity-100' : 'opacity-0', (precip === 100 || maxTemp > 99) && 'text-[.7rem]')}>
+    style={{ backgroundColor: currentColor.value, color: currentColor.text, borderColor: isToday ? currentColor.text : 'transparent' }}
+    className='flex justify-between font-semibold text-[.7rem] absolute bottom-[4px] right-[9px] left-[4px] pl-[6px] rounded-b-xl border-t'>
+    <div className={cn(todayWeather ? 'opacity-100' : 'opacity-0', (precip === 100 || maxTemp > 99) && 'text-[.6rem]')}>
      {minTemp}°/ {maxTemp}°
     </div>
-    <div className={cn('flex justify-end items-start', todayWeather ? 'opacity-100' : 'opacity-0', precip === 100 && 'text-[.7rem]')}>
+    <div className={cn('flex justify-end items-start', todayWeather ? 'opacity-100' : 'opacity-0', precip === 100 && 'text-[.6rem]')}>
      {precip}% <Raindrop className='w-4 h-4 -ml-1 -mt-0.5' />
     </div>
    </div>
