@@ -14,11 +14,11 @@ function MenuLink({ len, link, index }: MenuLinkProps) {
  return (
   <div
    className={cn(
-    'border-x border-slate-300 relative menu-animation opacity-0 bg-[#2b2c2c] z-50',
+    'border-x border-slate-300 relative menu-animation opacity-0 bg-[#2b2c2c]',
     index === len - 1 ? 'border-b rounded-b-sm' : '',
     index === 0 ? 'rounded-t-sm' : ''
    )}
-   style={{ '--i': index } as React.CSSProperties}>
+   style={{ '--i': index, zIndex: 10000 } as React.CSSProperties}>
    <a
     id={index.toString()}
     href={link.url}

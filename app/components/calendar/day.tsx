@@ -43,8 +43,8 @@ function Day({ day, index, events, todayWeather }: Props) {
       isThisMonth && 'opacity-100'
      )}>
      <div
-      style={{ backgroundColor: isToday ? currentColor.value : 'black', borderColor: isToday ? currentColor.text : 'transparent' }}
-      className={cn('absolute bg-black rounded-xl top-[9px] right-[9px] left-[4px] bottom-[4px] z-0 border')}
+      style={{ backgroundColor: isToday ? currentColor.value : 'black' }}
+      className={cn('absolute bg-black rounded-xl top-[9px] right-[9px] left-[4px] bottom-[4px] z-0')}
      />
      <DayContent
       day={day}
@@ -53,7 +53,7 @@ function Day({ day, index, events, todayWeather }: Props) {
       todayWeather={todayWeather}
       currentColor={currentColor}
      />
-     <div className='gloss absolute top-[8px] left-1 right-[8px] bottom-10 z-20' />
+     <div className='gloss absolute top-[8px] left-1 right-[8px] bottom-10 z-10' />
     </div>
    </DayDetail>
   </Suspense>

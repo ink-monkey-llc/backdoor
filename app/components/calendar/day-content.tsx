@@ -40,13 +40,13 @@ function DayContent({
     key={index}>
     <div className='flex justify-between pr-[6px] pt-[6px]'>
      <div
-      style={{ backgroundColor: currentColor.value, color: currentColor.text, borderColor: isToday ? currentColor.text : 'transparent' }}
-      className='text-[.55rem] font-semibold flex justify-center items-center border rounded-[4px] py-0.5 mr-1 h-max w-[54px]'>
+      style={{ backgroundColor: isToday ? currentColor.text : currentColor.value, color: isToday ? currentColor.value : currentColor.text }}
+      className='text-[.55rem] font-semibold flex justify-center items-center  rounded-[4px] py-0.5 mr-1 h-max w-[54px]'>
       {dayLabel}
      </div>
      <div
-      style={{ backgroundColor: currentColor.value, color: currentColor.text, borderColor: isToday ? currentColor.text : 'transparent' }}
-      className='flex justify-center text-white text-lg rounded-[4px] w-[29px] border '>
+      style={{ backgroundColor: isToday ? currentColor.text : currentColor.value, color: isToday ? currentColor.value : currentColor.text }}
+      className='flex justify-center text-white text-lg rounded-[4px] w-[29px]  '>
       {day.day}
      </div>
     </div>
@@ -71,7 +71,7 @@ function DayContent({
    </div>
    <div
     style={{ backgroundColor: currentColor.value, color: currentColor.text, borderColor: isToday ? currentColor.text : 'transparent' }}
-    className='flex justify-between font-semibold text-[.7rem] absolute bottom-[4px] right-[9px] left-[4px] pl-[6px] rounded-b-xl border'>
+    className='flex justify-between font-semibold text-[.7rem] absolute bottom-[4px] right-[9px] left-[4px] pl-[6px] rounded-b-xl border-t'>
     <div className={cn(todayWeather ? 'opacity-100' : 'opacity-0', (precip === 100 || maxTemp > 99) && 'text-[.6rem]')}>
      {minTemp}°/ {maxTemp}°
     </div>
