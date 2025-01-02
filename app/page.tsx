@@ -10,6 +10,7 @@ import Logo from './logo/logo'
 import Search from './search/search'
 import Calendar from './calendar/calendar'
 import CalMain from './cal/cal-main'
+import Link from 'next/link'
 
 export default function Home() {
  return (
@@ -23,7 +24,10 @@ export default function Home() {
        <ClockWeather />
       </div>
       <div className=' px-10 flex gap-8 m-auto my-auto h-[40vh] '>
+        <div>
+        <a className='border border-white p-2 rounded-md w-full ml-auto' rel='noreferrer' target='_blank' href='ms-settings:bluetooth'>Bluetooth Settings</a>
        <Search />
+        </div>
       </div>
      </div>
      <CalMain />

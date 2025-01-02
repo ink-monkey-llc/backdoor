@@ -61,5 +61,3 @@ function Day({ day, index, events, todayWeather }: Props) {
 }
 
 export default Day
-
-// calendar-days
