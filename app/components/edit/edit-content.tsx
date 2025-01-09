@@ -13,6 +13,7 @@ import Submit from '../inputs/submit'
 import dayjs from '../../../lib/dayjs'
 import { useNewEventStore } from '../../../lib/zustand/store'
 import { processDateTime } from '../../../lib/date-utils'
+import TimeNew from '../inputs/time-new'
 
 function EditContent({ color }: { color: ColorOption }) {
     const eventId = useNewEventStore((state) => state.eventId)
@@ -69,9 +70,11 @@ function EditContent({ color }: { color: ColorOption }) {
                     className='bg-black h-[300px] mr-[14px] px-2 overflow-y-scroll flex flex-col'>
                     <Summary />
                     <DateRange />
-                    <div className='flex gap-2 items-center mt-2'>
-                        <Time pos='start' />
-                        <Time pos='end' />
+                    <div className='flex gap-4 items-center mt-2'>
+                        <div className='flex flex-col gap-2'>
+                            <TimeNew pos='start' />
+                            <TimeNew pos='end' />
+                        </div>
                         <AllDay />
                     </div>
                     <Description />
